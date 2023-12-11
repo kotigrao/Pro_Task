@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-center pt-5">
+  <table class="table table-stiped border w-75">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email Address</th>
+        <th>Date of Birth</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td>{{item.id}}</td>
+        <td>{{item.firstName}}</td>
+        <td>{{item.lastName}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.dateOfBirth | date:'dd-MM-yyyy'}}</td>
+        <td>
+          <i title="Edit" class="fas fa-edit me-3 icon"></i>
+          <i title="Delete" class="fas fa-trash icon"></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
