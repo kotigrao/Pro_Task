@@ -4,10 +4,14 @@
       <app-search></app-search>
     </div>
     <div class="ms-3 me-auto">
-      <button class="btn btn-primary m-1" onclick="AddPatient" type="button">Add Patient</button>
+      <button class="btn btn-primary m-1" (click)="AddPatient()" type="button">Add Patient</button>
     </div>
   </div>
   <div>
     <app-user-table></app-user-table>
   </div>
 </div>
+<div class="modal"  [hidden]="show">
+
+</div>
+

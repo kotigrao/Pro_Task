@@ -15,5 +15,10 @@ import { AddPatientComponent } from '../add-patient/add-patient.component';
   styleUrl: './body-layout.component.css'
 })
 export class BodyLayoutComponent {
+show: boolean=true;
 
+  AddPatient(): void {
+    debugger;
+    this.show = this.show? false : true;
+  }
 }

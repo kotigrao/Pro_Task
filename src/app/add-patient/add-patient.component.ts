@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './add-patient.component.css'
 })
 export class AddPatientComponent {
+show: boolean=false;
 
+  AddPatient(): void {
+    debugger;
+    this.show = this.show? false : true;
+  }
 }
